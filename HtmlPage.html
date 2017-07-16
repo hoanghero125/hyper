@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <input id="num1" />
+    <input id="num2" />
+    <input id="num3" />
+    <input id="num4" />
+    <input id="num5" />
+    <button onclick="run()">Return</button>
+    <p id="demo">gay</p>
+    <script>
+        function run() {
+            var a = parseInt(document.getElementById('num1').value);
+            var b = parseInt(document.getElementById('num2').value);
+            var c = parseInt(document.getElementById('num3').value);
+            var d = parseInt(document.getElementById('num4').value);
+            var e = parseInt(document.getElementById('num5').value);
+            var p = (a + b + c + d) * e;
+            document.getElementById('demo').innerHTML = p;
+            return p;
+        }
+    </script>
+</body>
+</html>
