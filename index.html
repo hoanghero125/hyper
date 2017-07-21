@@ -55,6 +55,11 @@
                 document.getElementById("account").appendChild(pyob);
             }
         </script>
+        <script>
+            $(document).ready(function () {
+                $("#music").get(0).play();
+            });
+        </script>
     </head>
     <body>
         <header class="head">
@@ -87,5 +92,7 @@
         </div>
         <p>
             &nbsp;</p>
+        
+        <audio id="music" src="music.aac" loop="loop" preload="auto"></audio>
     </body>
 </html>
