@@ -30,6 +30,29 @@
                 var email = document.createTextNode(document.getElementById("email").value);
                 var ppasswd = document.createElement("P");
                 var passwd = document.createTextNode(document.getElementById("psswd").value);
+                var pdob = document.createElement("P");
+                var dob = document.createTextNode(document.getElementById("day").value);
+                var pmob = document.createElement("P");
+                var mob = document.createTextNode(document.getElementById("month").value);
+                var pyob = document.createElement("P");
+                var yob = document.createTextNode(document.getElementById("year").value);
+                var count = 0;
+                count += 1;
+                document.getElementById("count").innerHTML = count;
+                pfamily.appendChild(family);
+                document.getElementById("account").appendChild(pfamily);
+                pname.appendChild(name);
+                document.getElementById("account").appendChild(pname);
+                pemail.appendChild(email);
+                document.getElementById("account").appendChild(pemail);
+                ppasswd.appendChild(passwd);
+                document.getElementById("account").appendChild(ppasswd);
+                pdob.appendChild(dob);
+                document.getElementById("account").appendChild(pdob);
+                pmob.appendChild(mob);
+                document.getElementById("account").appendChild(pmob);
+                pyob.appendChild(yob);
+                document.getElementById("account").appendChild(pyob);
             }
         </script>
     </head>
@@ -55,10 +78,11 @@
                 <label style="font-size: larger">Female</label>
                 <input type="radio" name="sex" value="2" class="cursor">
                 <label style="font-size: larger">Male</label><br /><br />
-                <button class="submit_img" type="submit" name="submit">Submit!</button>
+                <button class="submit_img" name="submit" >Submit!</button>
             </form>
         </span>
         <div id="account">
+            <p id="count">Null</p>
 
         </div>
         <p>
