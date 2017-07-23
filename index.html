@@ -21,7 +21,7 @@
             });
         </script>
         <script>
-            function submit() {
+            function submit {
                 var pfamily = document.createElement("P");
                 var family = document.createTextNode(document.getElementById("family").value);
                 var pname = document.createElement("P");
@@ -71,7 +71,7 @@
         <span style="height: 300px; width: 420px;" class="newStyle10">
             <p style="text-align: left" class="newStyle2">Đăng kí</p>
             <p style="text-align: left" class="newStyle3">Register new account</p>
-            <!--form name="reg" method="get" id="reg"-->
+            <form name="reg" method="get" id="reg">
                 <input type="text" data-type="text" name="family" id="family" placeholder="Family" style="height: 40px; width: 200px; border: 0.5px solid #3366CC;" class="cursor" />
                 <input type="text" data-type="text" name="name" id="name" placeholder="Name" style="height: 40px; width: 200px; border: 0.5px solid #3366CC;" class="cursor" /><br /><br />
                 <input type="email" data-type="text" name="email" id="email" placeholder="Email" style="width: 408px; height: 40px; border: 0.5px solid #3366CC;" class="cursor" /><br /><br />
@@ -83,8 +83,8 @@
                 <label style="font-size: larger">Female</label>
                 <input type="radio" name="sex" value="2" class="cursor">
                 <label style="font-size: larger">Male</label><br /><br />
-            <!--/form-->
-            <button class="submit_img" name="submit">Submit!</button>
+            </form>
+            <button class="submit_img" name="submit" onclick="submit">Submit!</button>
         </span>
         <div id="account">
             <p id="count">Null</p>
