@@ -21,20 +21,20 @@
             });
         </script>
         <script>
-            function submit {
-                var pfamily = document.createElement("P");
+            function submit() {
+                var pfamily = document.createElement("p");
                 var family = document.createTextNode(document.getElementById("family").value);
-                var pname = document.createElement("P");
+                var pname = document.createElement("p");
                 var name = document.createTextNode(document.getElementById("name").value);
-                var pemail = document.createElement("P");
+                var pemail = document.createElement("p");
                 var email = document.createTextNode(document.getElementById("email").value);
-                var ppasswd = document.createElement("P");
+                var ppasswd = document.createElement("p");
                 var passwd = document.createTextNode(document.getElementById("psswd").value);
-                var pdob = document.createElement("P");
+                var pdob = document.createElement("p");
                 var dob = document.createTextNode(document.getElementById("day").value);
-                var pmob = document.createElement("P");
+                var pmob = document.createElement("p");
                 var mob = document.createTextNode(document.getElementById("month").value);
-                var pyob = document.createElement("P");
+                var pyob = document.createElement("p");
                 var yob = document.createTextNode(document.getElementById("year").value);
                 var count = 0;
                 count += 1;
@@ -84,10 +84,10 @@
                 <input type="radio" name="sex" value="2" class="cursor">
                 <label style="font-size: larger">Male</label><br /><br />
             </form>
-            <button class="submit_img" name="submit" onclick="submit">Submit!</button>
+            <button class="submit_img" name="submit" onclick="submit()">Submit!</button>
         </span>
-        <div id="account">
-            <p id="count">Null</p>
+        <div id="account" class="account">
+            <p id="count"></p>
 
         </div>
         <p>
